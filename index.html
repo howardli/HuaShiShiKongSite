@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>华史时空 · 从夏到清</title>
+    <meta name="description" content="面向历史爱好者的中国历史时空软件：拖动时间轴，看四千年间政权兴衰分合、事件发生、人物行迹所至——每一个事实都带出处，引文保持古籍原文。" />
+    <meta name="theme-color" content="#faf9f4" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <!-- 分享卡片（微信/X 等抓取器要绝对地址；镜像站出站地址单源与 README 一致） -->
+    <meta property="og:title" content="华史时空 · 从夏到清" />
+    <meta property="og:description" content="拖动时间轴，看四千年间政权兴衰分合、事件发生、人物行迹所至——每一个事实都带出处。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://howardli.github.io/HuaShiShiKongSite/" />
+    <meta property="og:image" content="https://howardli.github.io/HuaShiShiKongSite/og.png" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- 数据预载：与 JS 模块下载并行抢跑（否则 fetch 要等 JS 全下完执行后才发起，
+         慢网下白屏多等一个 JS 下载周期）。crossorigin＝与 App 的 fetch 同模式，
+         命中同一缓存不双发；路径 './' 相对页面＝BASE_URL 同解析，任意子路径部署安全 -->
+    <link rel="preload" as="fetch" href="./data/bundle.json" crossorigin />
+    <script type="module" crossorigin src="./assets/index-6svSCCBT.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-z2jxF7rn.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-rtD4_mO6.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
